@@ -1,11 +1,11 @@
 package tictactoe;
 
 public class Turn {
-    public String marker;
-    public int space[];
+    public Marker marker;
+    public Space space;
 
-    public Turn(Marker marker, Space space) {
-        this.marker = marker.symbol;
-        this.space = new int[]{space.row, space.col};
+    public Turn(Space space) {
+        this.marker = space.marker;
+        this.space = space;
     }
 }

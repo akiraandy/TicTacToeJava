@@ -2,7 +2,7 @@ package tictactoe;
 
 public class Space {
     public int row, col;
-    private Marker marker;
+    public Marker marker;
 
     public Space(int row, int col, Marker marker) {
         this.row = row;
@@ -15,12 +15,12 @@ public class Space {
         this.col = col;
     }
 
+    public boolean isSame(Space space) {
+        return this.row == space.row && this.col == space.col;
+    }
+
     public boolean isFilled() {
-        if(this.marker != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.marker != null;
     }
 
     public void fill(Marker marker) {
@@ -32,10 +32,6 @@ public class Space {
     }
 
     public boolean isEmpty() {
-        if(this.marker == null) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.marker == null;
     }
 }

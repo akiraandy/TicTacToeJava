@@ -9,22 +9,25 @@ class SpaceTest {
     private Space space;
     private Space spaceWithMarker;
     private Marker marker;
+    private int row, col;
 
     @BeforeEach
     void setUp() throws InvalidMarkerException {
-        marker = new Marker('X');
-        space = new Space(2, 2);
-        spaceWithMarker = new Space(2, 2, marker);
+        row = 2;
+        col = 2;
+        marker = Marker.PLAYER1;
+        space = new Space(row, col);
+        spaceWithMarker = new Space(row, col, marker);
     }
 
     @Test
     void hasARow() {
-        assertEquals(2, space.row);
+        assertEquals(row, space.row);
     }
 
     @Test
     void hasAColumn() {
-        assertEquals(2, space.col);
+        assertEquals(col, space.col);
     }
 
     @Test
@@ -50,5 +53,14 @@ class SpaceTest {
         spaceWithMarker.reset();
         assertFalse(spaceWithMarker.isFilled());
         assertTrue(spaceWithMarker.isEmpty());
+    }
+
+    @Test
+    void isSame() {
+        Space newSpace = new Space(row, col);
+        assertTrue(space.isSame(newSpace));
+        assertTrue(spaceWithMarker.isSame(newSpace));
+        Space anotherSpace = new Space(1, 2);
+        assertFalse(space.isSame(anotherSpace));
     }
 }
