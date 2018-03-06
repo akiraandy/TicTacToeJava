@@ -15,7 +15,7 @@ class SpaceTest {
     void setUp() throws InvalidMarkerException {
         row = 2;
         col = 2;
-        marker = new Marker('X');
+        marker = Marker.PLAYER1;
         space = new Space(row, col);
         spaceWithMarker = new Space(row, col, marker);
     }

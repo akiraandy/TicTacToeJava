@@ -5,7 +5,8 @@ public class Human extends Player {
         super(marker);
     }
 
-    public Turn take_turn(Space space) {
-        return new Turn(this.marker, space);
+    public Turn takeTurn(Space space) {
+        space = new Space(space.row, space.col, this.marker);
+        return new Turn(space);
     }
 }

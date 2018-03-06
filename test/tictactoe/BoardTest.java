@@ -20,7 +20,7 @@ class BoardTest {
         invalidSize = 0;
         row = 2;
         col = 2;
-        marker = new Marker('X');
+        marker = Marker.PLAYER1;
         board = new Board(size);
     }
 

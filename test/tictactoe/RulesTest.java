@@ -16,8 +16,8 @@ class RulesTest {
     void setUp() throws InvalidBoardSizeException, InvalidMarkerException {
         board = new Board(3);
         rules = new Rules();
-        player1Marker = new Marker('X');
-        player2Marker = new Marker( 'O');
+        player1Marker = Marker.PLAYER1;
+        player2Marker = Marker.PLAYER2;
         player1 = new Human(player1Marker);
         player2 = new Human(player2Marker);
         players = new Human[] {player1, player2};

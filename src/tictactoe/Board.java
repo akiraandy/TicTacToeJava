@@ -1,10 +1,12 @@
 package tictactoe;
 
+
 import java.util.*;
 
 public class Board {
     public Space[][] spaces;
     public int rowSize, boardSize;
+    private int EMPTY_BOARD_SIZE = 0;
     public Board(int size) throws InvalidBoardSizeException {
         checkIfValidBoardSize(size);
         initializeSpaces();
@@ -27,20 +29,12 @@ public class Board {
 
     public boolean isFull() {
         List<Space> spaces = availableSpaces();
-        if (spaces.size() == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return spaces.size() == EMPTY_BOARD_SIZE;
     }
 
     public boolean isEmpty() {
         List<Space> spaces = availableSpaces();
-        if (spaces.size() == boardSize) {
-            return true;
-        } else {
-            return false;
-        }
+        return spaces.size() == boardSize;
     }
 
     private Space getSpace(Space space) throws SpaceDoesNotExistException {
@@ -63,11 +57,11 @@ public class Board {
 
     private List<Space> availableSpaces() {
         List<Space> availableSpaces = new ArrayList<>();
-        Map<Space, Boolean> statuses;
-        statuses = spaceStatuses();
-        for (Map.Entry<Space, Boolean> spaceEntry : statuses.entrySet()) {
-            if(spaceEntry.getValue()) {
-                availableSpaces.add(spaceEntry.getKey());
+        for(int row = 0; row < this.rowSize; row++) {
+            for (int col = 0; col < this.rowSize; col++) {
+                if (spaces[row][col].isEmpty()) {
+                    availableSpaces.add(spaces[row][col]);
+                }
             }
         }
         return availableSpaces;
@@ -75,40 +69,29 @@ public class Board {
 
     private boolean validSpace(Space space) {
         List<Space> spaces = availableSpaces();
-        if (spaces.contains(space)){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private HashMap spaceStatuses() {
-        HashMap<Space, Boolean> spacesStatusHash = new HashMap();
-        for(int row = 0; row < this.rowSize; row++) {
-            for(int col = 0; col < this.rowSize; col++) {
-                spacesStatusHash.put(this.spaces[row][col], this.spaces[row][col].isEmpty());
-            }
-        }
-        return spacesStatusHash;
+        return spaces.contains(space);
     }
 
     private List<Space> unavailableSpaces() {
         List<Space> unavailableSpaces = new ArrayList<>();
-        Map<Space, Boolean> statuses;
-        statuses = spaceStatuses();
-        for (Map.Entry<Space, Boolean> spaceEntry : statuses.entrySet()) {
-            if(!spaceEntry.getValue()) {
-                unavailableSpaces.add(spaceEntry.getKey());
+        for(int row = 0; row < this.rowSize; row++) {
+            for (int col = 0; col < this.rowSize; col++) {
+                if (spaces[row][col].isFilled()) {
+                    unavailableSpaces.add(spaces[row][col]);
+                }
             }
         }
         return unavailableSpaces;
     }
 
     private List<Space> allSpaces() {
-        List <Space> spaces = new ArrayList<>();
-        Set setOfAllSpaces = spaceStatuses().keySet();
-        spaces.addAll(setOfAllSpaces);
-        return spaces;
+        List<Space> allSpaces = new ArrayList<>();
+        for(int row = 0; row < this.rowSize; row++) {
+            for (int col = 0; col < this.rowSize; col++) {
+                    allSpaces.add(spaces[row][col]);
+            }
+        }
+        return allSpaces;
     }
 
     private void initializeSpaces() {

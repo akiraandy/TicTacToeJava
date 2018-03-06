@@ -11,16 +11,17 @@ class HumanTest {
     private Space space;
     @BeforeEach
     void setUp() throws InvalidMarkerException {
-        marker = new Marker('X');
+        marker = Marker.PLAYER1;
         human = new Human(marker);
-        space = new Space(2, 2);
+        space = new Space(2, 2, marker);
     }
 
     @Test
     void takeTurn() {
-        Turn turn = human.take_turn(space);
-        assertEquals(turn.marker, human.marker.symbol);
-        assertEquals(space, turn.space);
+        Turn turn = human.takeTurn(space);
+        assertEquals(turn.marker, human.marker);
+        assertEquals(space.row, turn.space.row);
+        assertEquals(space.col, turn.space.col);
     }
 
 }
