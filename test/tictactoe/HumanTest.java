@@ -5,26 +5,22 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TurnTest {
-
-    private Turn turn;
+class HumanTest {
+    private Human human;
     private Marker marker;
     private Space space;
-
     @BeforeEach
     void setUp() throws InvalidMarkerException {
         marker = new Marker('X');
+        human = new Human(marker);
         space = new Space(2, 2);
-        turn = new Turn(marker, space);
     }
 
     @Test
-    void hasMarker() {
-        assertEquals("X", turn.marker);
-    }
-
-    @Test
-    void hasSpace() {
+    void takeTurn() {
+        Turn turn = human.take_turn(space);
+        assertEquals(turn.marker, human.marker.symbol);
         assertEquals(space, turn.space);
     }
+
 }

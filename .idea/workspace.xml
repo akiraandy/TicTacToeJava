@@ -6,7 +6,31 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ac4d53-de91-47cc-b75e-9e47769c153b" name="Default" comment="" />
+    <list default="true" id="60ac4d53-de91-47cc-b75e-9e47769c153b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/tictactoe/Player.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/tictactoe/Rules.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/tictactoe/SpaceDoesNotExistException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/tictactoe/HumanTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/tictactoe/RulesTest.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTTgame/tictactoe.jar" afterPath="$PROJECT_DIR$/out/artifacts/TTTgame/tictactoe.jar" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Board.class" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Board.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Space.class" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Space.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/State.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Turn.class" afterPath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Turn.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/BoardTest.class" afterPath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/BoardTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/SpaceTest.class" afterPath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/SpaceTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/StateTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/TurnTest.class" afterPath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/TurnTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/Board.java" afterPath="$PROJECT_DIR$/src/tictactoe/Board.java" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/Space.java" afterPath="$PROJECT_DIR$/src/tictactoe/Space.java" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/State.java" afterPath="$PROJECT_DIR$/src/tictactoe/Human.java" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/Turn.java" afterPath="$PROJECT_DIR$/src/tictactoe/Turn.java" />
+      <change beforePath="$PROJECT_DIR$/test/tictactoe/BoardTest.java" afterPath="$PROJECT_DIR$/test/tictactoe/BoardTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/tictactoe/SpaceTest.java" afterPath="$PROJECT_DIR$/test/tictactoe/SpaceTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/tictactoe/StateTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/tictactoe/TurnTest.java" afterPath="$PROJECT_DIR$/test/tictactoe/TurnTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,54 +46,104 @@
     <favorites_list name="tictactoe" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5914062">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/tictactoe/State.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/tictactoe/Board.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/tictactoe/BoardTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tictactoe/BoardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tictactoe/MarkerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpaceDoesNotExistException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/SpaceDoesNotExistException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+              <folding>
+                <element signature="e#163#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HumanTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tictactoe/HumanTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Human.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <element signature="e#88#89#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+                <element signature="e#159#160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/Rules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RulesTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/tictactoe/RulesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,6 +151,9 @@
     <replaceStrings>
       <replace>InvalidBoardSizeException</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -100,23 +177,29 @@
         <option value="$PROJECT_DIR$/src/tictactoe/InvalidMarkerException.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/Marker.java" />
         <option value="$PROJECT_DIR$/test/tictactoe/MarkerTest.java" />
-        <option value="$PROJECT_DIR$/src/tictactoe/Turn.java" />
-        <option value="$PROJECT_DIR$/test/tictactoe/TurnTest.java" />
-        <option value="$PROJECT_DIR$/test/tictactoe/SpaceTest.java" />
-        <option value="$PROJECT_DIR$/src/tictactoe/Space.java" />
         <option value="$PROJECT_DIR$/test/tictactoe/StateTest.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/InvalidBoardSizeException.java" />
+        <option value="$PROJECT_DIR$/test/tictactoe/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/Player.java" />
+        <option value="$PROJECT_DIR$/test/tictactoe/HumanTest.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/Turn.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/Human.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/Space.java" />
+        <option value="$PROJECT_DIR$/test/tictactoe/TurnTest.java" />
+        <option value="$PROJECT_DIR$/test/tictactoe/SpaceTest.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/SpaceDoesNotExistException.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/Board.java" />
         <option value="$PROJECT_DIR$/test/tictactoe/BoardTest.java" />
+        <option value="$PROJECT_DIR$/test/tictactoe/RulesTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1417" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -211,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest.spacesAreA2DArray">
+  <component name="RunManager" selected="JUnit.BoardTest.throwsErrorIfSpaceDoesNotExistOnBoard">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -232,7 +315,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="BoardTest.spacesAreA2DArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tictactoe.*" />
@@ -244,56 +327,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="tictactoe" />
       <option name="MAIN_CLASS_NAME" value="tictactoe.BoardTest" />
-      <option name="METHOD_NAME" value="spacesAreA2DArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BoardTest.throwsErrorIfBoardSizeIsTooSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tictactoe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="tictactoe.BoardTest" />
-      <option name="METHOD_NAME" value="throwsErrorIfBoardSizeIsTooSmall" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SpaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tictactoe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="tictactoe.SpaceTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -307,7 +340,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SpaceTest.canBeReset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardTest.throwsErrorIfSpaceDoesNotExistOnBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tictactoe.*" />
@@ -318,8 +351,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="tictactoe.SpaceTest" />
-      <option name="METHOD_NAME" value="canBeReset" />
+      <option name="MAIN_CLASS_NAME" value="tictactoe.BoardTest" />
+      <option name="METHOD_NAME" value="throwsErrorIfSpaceDoesNotExistOnBoard" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -332,7 +365,32 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SpaceTest.willReturnFalseIfNotFilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HumanTest.takeTurn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="tictactoe.HumanTest" />
+      <option name="METHOD_NAME" value="takeTurn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpaceTest.isSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tictactoe.*" />
@@ -344,7 +402,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="tictactoe" />
       <option name="MAIN_CLASS_NAME" value="tictactoe.SpaceTest" />
-      <option name="METHOD_NAME" value="willReturnFalseIfNotFilled" />
+      <option name="METHOD_NAME" value="isSame" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TurnTest.hasSpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="tictactoe.TurnTest" />
+      <option name="METHOD_NAME" value="hasSpace" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -418,19 +501,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SpaceTest.willReturnFalseIfNotFilled" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SpaceTest.canBeReset" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SpaceTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.throwsErrorIfBoardSizeIsTooSmall" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.spacesAreA2DArray" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HumanTest.takeTurn" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SpaceTest.isSame" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TurnTest.hasSpace" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.throwsErrorIfSpaceDoesNotExistOnBoard" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest.spacesAreA2DArray" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.throwsErrorIfBoardSizeIsTooSmall" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SpaceTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SpaceTest.willReturnFalseIfNotFilled" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SpaceTest.canBeReset" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest.throwsErrorIfSpaceDoesNotExistOnBoard" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SpaceTest.isSame" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TurnTest.hasSpace" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HumanTest.takeTurn" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -456,57 +539,57 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 26m 31s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="BoardTest - 2018.03.06 at 11h 01m 50s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 35m 07s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="BoardTest_isFull - 2018.03.06 at 10h 03m 53s.xml">
+      <configuration name="BoardTest.isFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 36m 27s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="BoardTest_isFull - 2018.03.06 at 10h 04m 38s.xml">
+      <configuration name="BoardTest.isFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 37m 27s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="BoardTest_throwsErrorIfSpaceDoesNotExistOnBoard - 2018.03.06 at 12h 29m 18s.xml">
+      <configuration name="BoardTest.throwsErrorIfSpaceDoesNotExistOnBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 37m 41s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="HumanTest_takeTurn - 2018.03.06 at 11h 28m 41s.xml">
+      <configuration name="HumanTest.takeTurn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 39m 52s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="HumanTest_takeTurn - 2018.03.06 at 11h 29m 17s.xml">
+      <configuration name="HumanTest.takeTurn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 41m 06s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="HumanTest_takeTurn - 2018.03.06 at 11h 29m 52s.xml">
+      <configuration name="HumanTest.takeTurn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 43m 54s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="SpaceTest_isSame - 2018.03.06 at 12h 18m 46s.xml">
+      <configuration name="SpaceTest.isSame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_spacesAreA2DArray - 2018.03.05 at 16h 56m 08s.xml">
-      <configuration name="BoardTest.spacesAreA2DArray" configurationId="JUnit" />
+    <history-entry file="SpaceTest_isSame - 2018.03.06 at 12h 19m 41s.xml">
+      <configuration name="SpaceTest.isSame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_throwsErrorIfBoardSizeIsTooSmall - 2018.03.05 at 16h 19m 15s.xml">
-      <configuration name="BoardTest.throwsErrorIfBoardSizeIsTooSmall" configurationId="JUnit" />
+    <history-entry file="TurnTest_hasSpace - 2018.03.06 at 12h 18m 40s.xml">
+      <configuration name="TurnTest.hasSpace" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="2560" height="1417" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38729197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19181585" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13828126" sideWeight="0.85843104" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13733906" sideWeight="0.85843104" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="tictactoe" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -537,17 +620,17 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19181585" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13828126" sideWeight="0.85843104" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13733906" sideWeight="0.85843104" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13860206" sideWeight="0.14156897" order="4" side_tool="true" content_ui="tabs" />
@@ -557,7 +640,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -595,26 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/MarkerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Marker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tictactoe/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -623,65 +688,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Turn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/TurnTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/SpaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/tictactoe/StateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,27 +708,160 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tictactoe/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Board.java">
+    <entry file="file://$PROJECT_DIR$/test/tictactoe/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Marker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Turn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tictactoe/TurnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tictactoe/SpaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="58" column="13" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding>
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tictactoe/MarkerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/tictactoe/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/SpaceDoesNotExistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tictactoe/HumanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tictactoe/RulesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
