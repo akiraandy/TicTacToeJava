@@ -1,7 +1,8 @@
 package tictactoe;
 
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Board {
     public Space[][] spaces;
