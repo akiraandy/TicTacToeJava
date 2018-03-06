@@ -16,19 +16,11 @@ public class Space {
     }
 
     public boolean isSame(Space space) {
-        if (this.row == space.row && this.col == space.col) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.row == space.row && this.col == space.col;
     }
 
     public boolean isFilled() {
-        if(this.marker != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.marker != null;
     }
 
     public void fill(Marker marker) {
@@ -40,10 +32,6 @@ public class Space {
     }
 
     public boolean isEmpty() {
-        if(this.marker == null) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.marker == null;
     }
 }

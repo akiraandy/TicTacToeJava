@@ -3,9 +3,9 @@ package tictactoe;
 import java.util.ArrayList;
 
 public class Rules {
-    public boolean winner(Board board, Player[] players) {
+    public boolean winner(Board board) {
         for (ArrayList<Space> line : winningCombinations(board)) {
-            if ((line.stream().allMatch(space -> space.marker == players[0].marker) || (line.stream().allMatch(space -> space.marker == players[1].marker)))){
+            if ((line.stream().allMatch(space -> space.marker == Marker.PLAYER1) || (line.stream().allMatch(space -> space.marker == Marker.PLAYER2)))){
                 return true;
             }
         }
@@ -23,12 +23,12 @@ public class Rules {
         throw new NoWinnerException("The current game does not have a winner");
     }
 
-    public boolean tied(Board board, Player[] players) {
-        return board.isFull() && !winner(board, players);
+    public boolean tied(Board board) {
+        return board.isFull() && !winner(board);
     }
 
     public boolean over(Board board, Player[] players) {
-        return tied(board, players) || winner(board, players);
+        return tied(board) || winner(board);
     }
 
     private ArrayList<ArrayList<Space>> winningCombinations(Board board) {

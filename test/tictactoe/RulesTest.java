@@ -34,27 +34,27 @@ class RulesTest {
 
     @Test
     void winnerOnColumns() throws SpaceDoesNotExistException {
-        assertTrue(rules.winner(boardWithWinnerOnColumns(), players));
+        assertTrue(rules.winner(boardWithWinnerOnColumns()));
     }
 
     @Test
     void winnerOnMinorDiagonal() throws SpaceDoesNotExistException {
-        assertTrue(rules.winner(boardWithWinnerOnMinorDiagonal(), players));
+        assertTrue(rules.winner(boardWithWinnerOnMinorDiagonal()));
     }
 
     @Test
     void winnerOnMajorDiagonal() throws SpaceDoesNotExistException {
-        assertTrue(rules.winner(boardWithWinnerOnMajorDiagonal(), players));
+        assertTrue(rules.winner(boardWithWinnerOnMajorDiagonal()));
     }
 
     @Test
     void winnerOnRows() throws SpaceDoesNotExistException {
-        assertTrue(rules.winner(boardWithWinnerOnRows(), players));
+        assertTrue(rules.winner(boardWithWinnerOnRows()));
     }
 
     @Test
     void tie() throws SpaceDoesNotExistException {
-        assertTrue(rules.tied(tiedBoard(), players));
+        assertTrue(rules.tied(tiedBoard()));
     }
 
     @Test
