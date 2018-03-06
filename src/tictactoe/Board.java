@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Board {
     public Space[][] spaces;
-    private int size, boardSize;
+    public int rowSize, boardSize;
     public Board(int size) throws InvalidBoardSizeException {
         checkIfValidBoardSize(size);
         initializeSpaces();
@@ -57,7 +57,7 @@ public class Board {
         if(size < 3) {
             throw new InvalidBoardSizeException("Board size must be greater than 3");
         } else {
-            this.size = size;
+            this.rowSize = size;
         }
     }
 
@@ -84,8 +84,8 @@ public class Board {
 
     private HashMap spaceStatuses() {
         HashMap<Space, Boolean> spacesStatusHash = new HashMap();
-        for(int row = 0; row < this.size; row++) {
-            for(int col = 0; col < this.size; col++) {
+        for(int row = 0; row < this.rowSize; row++) {
+            for(int col = 0; col < this.rowSize; col++) {
                 spacesStatusHash.put(this.spaces[row][col], this.spaces[row][col].isEmpty());
             }
         }
@@ -112,9 +112,9 @@ public class Board {
     }
 
     private void initializeSpaces() {
-        this.spaces = new Space[this.size][this.size];
-        for (int rowIndex = 0; rowIndex < this.size; rowIndex++) {
-            for (int colIndex = 0; colIndex < this.size; colIndex++) {
+        this.spaces = new Space[this.rowSize][this.rowSize];
+        for (int rowIndex = 0; rowIndex < this.rowSize; rowIndex++) {
+            for (int colIndex = 0; colIndex < this.rowSize; colIndex++) {
                 this.spaces[rowIndex][colIndex] = new Space(rowIndex, colIndex);
             }
         }
