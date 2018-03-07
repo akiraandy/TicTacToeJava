@@ -10,7 +10,7 @@ class RulesTest {
     private Rules rules;
     private Marker player1Marker, player2Marker;
     private Player[] players;
-    private Human player1, player2;
+    private Player player1, player2;
 
     @BeforeEach
     void setUp() throws InvalidBoardSizeException, InvalidMarkerException {
@@ -18,9 +18,9 @@ class RulesTest {
         rules = new Rules();
         player1Marker = Marker.PLAYER1;
         player2Marker = Marker.PLAYER2;
-        player1 = new Human(player1Marker);
-        player2 = new Human(player2Marker);
-        players = new Human[] {player1, player2};
+        player1 = new Player(player1Marker);
+        player2 = new Player(player2Marker);
+        players = new Player[] {player1, player2};
     }
 
     @Test

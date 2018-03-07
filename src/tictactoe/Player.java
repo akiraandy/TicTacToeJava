@@ -1,12 +1,12 @@
 package tictactoe;
 
-public abstract class Player {
+public class Player {
     public Marker marker;
     public Player(Marker marker) {
         this.marker = marker;
     }
 
-    public Space takeTurn(Space space) {
-        return null;
+    public Space takeTurn(int row, int col) {
+        return new Space(row, col, this.marker);
     }
 }

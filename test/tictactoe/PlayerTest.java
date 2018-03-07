@@ -5,21 +5,21 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HumanTest {
-    private Human human;
+class PlayerTest {
+    private Player player;
     private Marker marker;
     private Space space;
     @BeforeEach
     void setUp() throws InvalidMarkerException {
         marker = Marker.PLAYER1;
-        human = new Human(marker);
+        player = new Player(marker);
         space = new Space(2, 2, marker);
     }
 
     @Test
     void takeTurn() {
-        Space turnSpace = human.takeTurn(2, 2);
-        assertEquals(turnSpace.marker, human.marker);
+        Space turnSpace = player.takeTurn(2, 2);
+        assertEquals(turnSpace.marker, player.marker);
         assertEquals(space.row, turnSpace.row);
         assertEquals(space.col, turnSpace.col);
     }
