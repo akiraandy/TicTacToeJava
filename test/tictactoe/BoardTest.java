@@ -31,15 +31,14 @@ class BoardTest {
 
     @Test
     void fillsASpace() throws SpaceDoesNotExistException {
-        Space space = board.spaces[row][col];
-        board.fillSpace(space, marker);
+        Space space = board.spaces[row][col].fill(marker);
+        board.fillSpace(space);
         assertTrue(board.spaces[row][col].isFilled());
     }
 
     @Test
     void resetsASpace() throws SpaceDoesNotExistException {
-        board.spaces[row][col].fill(marker);
-        Space space = board.spaces[row][col];
+        Space space = board.spaces[row][col].fill(marker);
         board.resetSpace(space);
         assertTrue(board.spaces[row][col].isEmpty());
     }
@@ -72,8 +71,8 @@ class BoardTest {
         fullBoard = new Board(size);
         for(int row = 0; row < size; row++) {
             for(int col = 0; col < size; col++) {
-                Space space = fullBoard.spaces[row][col];
-                fullBoard.fillSpace(space, marker);
+                Space space = fullBoard.spaces[row][col].fill(marker);
+                fullBoard.fillSpace(space);
             }
         }
         return fullBoard;

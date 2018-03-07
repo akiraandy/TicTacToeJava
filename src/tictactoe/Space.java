@@ -23,8 +23,9 @@ public class Space {
         return this.marker != null;
     }
 
-    public void fill(Marker marker) {
+    public Space fill(Marker marker) {
         this.marker = marker;
+        return this;
     }
 
     public void reset() {

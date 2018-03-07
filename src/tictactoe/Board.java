@@ -14,18 +14,14 @@ public class Board {
         boardSize = size * size;
     }
 
-    public void fillSpace(Space space, Marker marker) throws SpaceDoesNotExistException {
-        Space spaceToFill = getSpace(space);
-        List<Space> spaces = availableSpaces();
-        if (validSpace(spaceToFill)) {
-            spaces.get(spaces.indexOf(spaceToFill)).fill(marker);
+    public void fillSpace(Space space) throws SpaceDoesNotExistException {
+        if (validSpace(space)) {
+            getSpace(space).fill(space.marker);
         }
     }
 
     public void resetSpace(Space space) throws SpaceDoesNotExistException {
-        Space spaceToReset = getSpace(space);
-        List<Space> spaces = unavailableSpaces();
-        spaces.get(spaces.indexOf(spaceToReset)).reset();
+        getSpace(space).reset();
     }
 
     public boolean isFull() {
@@ -69,20 +65,12 @@ public class Board {
     }
 
     private boolean validSpace(Space space) {
-        List<Space> spaces = availableSpaces();
-        return spaces.contains(space);
-    }
-
-    private List<Space> unavailableSpaces() {
-        List<Space> unavailableSpaces = new ArrayList<>();
-        for(int row = 0; row < this.rowSize; row++) {
-            for (int col = 0; col < this.rowSize; col++) {
-                if (spaces[row][col].isFilled()) {
-                    unavailableSpaces.add(spaces[row][col]);
-                }
+        for (Space spaceInSpaces : availableSpaces()) {
+            if (spaceInSpaces.isSame(space)) {
+                return true;
             }
         }
-        return unavailableSpaces;
+        return false;
     }
 
     private List<Space> allSpaces() {
