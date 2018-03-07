@@ -6,7 +6,7 @@ public abstract class Player {
         this.marker = marker;
     }
 
-    public Turn take_turn(Space space) {
+    public Space takeTurn(Space space) {
         return null;
     }
 }
