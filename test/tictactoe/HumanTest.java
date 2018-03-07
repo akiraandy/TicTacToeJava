@@ -18,10 +18,10 @@ class HumanTest {
 
     @Test
     void takeTurn() {
-        Turn turn = human.takeTurn(space);
-        assertEquals(turn.marker, human.marker);
-        assertEquals(space.row, turn.space.row);
-        assertEquals(space.col, turn.space.col);
+        Space turnSpace = human.takeTurn(space);
+        assertEquals(turnSpace.marker, human.marker);
+        assertEquals(space.row, turnSpace.row);
+        assertEquals(space.col, turnSpace.col);
     }
 
 }
