@@ -6,6 +6,6 @@ public class Human extends Player {
     }
 
     public Space takeTurn(Space space) {
-        return new Space(space.row, space.col, this.marker);
+        return space.fill(this.marker);
     }
 }
