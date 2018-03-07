@@ -18,7 +18,7 @@ class HumanTest {
 
     @Test
     void takeTurn() {
-        Space turnSpace = human.takeTurn(space);
+        Space turnSpace = human.takeTurn(2, 2);
         assertEquals(turnSpace.marker, human.marker);
         assertEquals(space.row, turnSpace.row);
         assertEquals(space.col, turnSpace.col);

@@ -13,6 +13,7 @@ public class Space {
     public Space(int row, int col) {
         this.row = row;
         this.col = col;
+        this.marker = Marker.EMPTY;
     }
 
     public boolean isSame(Space space) {
@@ -20,7 +21,7 @@ public class Space {
     }
 
     public boolean isFilled() {
-        return this.marker != null;
+        return this.marker != Marker.EMPTY;
     }
 
     public Space fill(Marker marker) {
@@ -29,10 +30,10 @@ public class Space {
     }
 
     public void reset() {
-        this.marker = null;
+        this.marker = Marker.EMPTY;
     }
 
     public boolean isEmpty() {
-        return this.marker == null;
+        return this.marker == Marker.EMPTY;
     }
 }

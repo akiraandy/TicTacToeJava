@@ -5,7 +5,7 @@ public class Human extends Player {
         super(marker);
     }
 
-    public Space takeTurn(Space space) {
-        return space.fill(this.marker);
+    public Space takeTurn(int row, int col) {
+        return new Space(row, col, this.marker);
     }
 }

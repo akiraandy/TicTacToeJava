@@ -25,11 +25,11 @@ class RulesTest {
 
     @Test
     void over() throws SpaceDoesNotExistException {
-        assertTrue(rules.over(boardWithWinnerOnRows(), players));
-        assertTrue(rules.over(boardWithWinnerOnColumns(), players));
-        assertTrue(rules.over(boardWithWinnerOnMajorDiagonal(), players));
-        assertTrue(rules.over(boardWithWinnerOnMinorDiagonal(), players));
-        assertTrue(rules.over(tiedBoard(), players));
+        assertTrue(rules.over(boardWithWinnerOnRows()));
+        assertTrue(rules.over(boardWithWinnerOnColumns()));
+        assertTrue(rules.over(boardWithWinnerOnMajorDiagonal()));
+        assertTrue(rules.over(boardWithWinnerOnMinorDiagonal()));
+        assertTrue(rules.over(tiedBoard()));
     }
 
     @Test

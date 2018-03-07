@@ -21,6 +21,11 @@ class SpaceTest {
     }
 
     @Test
+    void isInstantiatedWithAnEmptyMarker() {
+        assertEquals(Marker.EMPTY, space.marker);
+    }
+
+    @Test
     void hasARow() {
         assertEquals(row, space.row);
     }
