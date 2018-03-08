@@ -21,7 +21,7 @@ public class Player {
             return winningMove(board);
         } else if (blockingMove(board) != null) {
             return blockingMove(board);
-        } else if (board.center() != null) {
+        } else if (board.center().isEmpty()) {
             return board.center();
         } else if (board.corners() != null){
             return board.corners();
