@@ -34,7 +34,7 @@ public class Rules {
     private ArrayList<ArrayList<Space>> winningCombinations(Board board) {
         ArrayList<ArrayList<Space>> winningCombinations = new ArrayList<>();
         winningCombinations.addAll(getRows(board));
-        winningCombinations.addAll(getColumnns(board));
+        winningCombinations.addAll(getColumns(board));
         winningCombinations.add(getMajorDiagonal(board));
         winningCombinations.add(getMinorDiagonal(board));
         return winningCombinations;
@@ -52,7 +52,7 @@ public class Rules {
         return rows;
     }
 
-    private ArrayList<ArrayList<Space>> getColumnns(Board board) {
+    private ArrayList<ArrayList<Space>> getColumns(Board board) {
         ArrayList<ArrayList<Space>> columns = new ArrayList<>(board.rowSize);
         for(int rowNum = 0; rowNum < board.rowSize; rowNum++) {
             ArrayList<Space> column = new ArrayList<>();
