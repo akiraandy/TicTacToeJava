@@ -54,18 +54,13 @@ public class Board {
         return spaces[center][center];
     }
 
-    public Space corners() {
+    public List<Space> corners() {
         List<Space> corners = new ArrayList<>();
         corners.add(spaces[0][0]);
         corners.add(spaces[0][rowSize - 1]);
         corners.add(spaces[rowSize - 1][0]);
         corners.add(spaces[rowSize - 1][rowSize - 1]);
-        for(Space space : availableSpaces()) {
-            if (corners.contains(space)) {
-                return space;
-            }
-        }
-        return null;
+        return corners;
     }
     private Space getSpace(Space space) throws SpaceDoesNotExistException {
         List<Space> spaces = allSpaces();

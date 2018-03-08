@@ -1,5 +1,7 @@
 package tictactoe;
 
+import java.util.List;
+
 public class Player {
     public Marker marker;
     private Rules rules;
@@ -23,12 +25,21 @@ public class Player {
             return blockingMove(board);
         } else if (board.center().isEmpty()) {
             return board.center();
-        } else if (board.corners() != null){
-            return board.corners();
+        } else if (chooseCorner(board.corners()) != null){
+            return chooseCorner(board.corners());
         } else if (anyAvailableSpace(board) != null) {
             return anyAvailableSpace(board);
         }
         return new Space(-1, -1);
+    }
+
+    private Space chooseCorner(List<Space> corners){
+        for (Space corner : corners) {
+            if (corner.isEmpty()) {
+                return corner;
+            }
+        }
+        return null;
     }
 
     private Space winningMove(Board board) {
