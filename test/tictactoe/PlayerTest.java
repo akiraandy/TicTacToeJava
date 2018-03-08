@@ -11,11 +11,11 @@ class PlayerTest {
     private Space space;
     private Board board;
     @BeforeEach
-    void setUp() throws InvalidMarkerException, InvalidBoardSizeException {
+    void setUp() throws InvalidMarkerException, InvalidBoardSizeException, InvalidPlayerNumberException {
         marker = Marker.PLAYER1;
-        player1 = new Player(Marker.PLAYER1);
-        player2 = new Player(Marker.PLAYER2);
-        space = new Space(2, 2, marker);
+        player1 = new Player(1);
+        player2 = new Player(2);
+        space = new Space(2, 2, player1);
         board = new Board(3);
     }
 
@@ -29,42 +29,42 @@ class PlayerTest {
 
     @Test
     void getBestMoveWhenOpponentCanWin() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 0, player2.marker));
-        board.fillSpace(new Space(1,1, player2.marker));
+        board.fillSpace(new Space(0, 0, player2));
+        board.fillSpace(new Space(1,1, player2));
         Space winningSpace = new Space(2,2);
         assertTrue(winningSpace.isSame(player1.getBestMove(board)));
     }
 
     @Test
     void willTakeAnyAvailableSpace() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space( 0, 0, player2.marker));
-        board.fillSpace(new Space( 0, 2, player2.marker));
-        board.fillSpace(new Space( 2, 0, player2.marker));
-        board.fillSpace(new Space(2,2, player2.marker));
-        board.fillSpace(new Space(1,1, player2.marker));
+        board.fillSpace(new Space( 0, 0, player2));
+        board.fillSpace(new Space( 0, 2, player2));
+        board.fillSpace(new Space( 2, 0, player2));
+        board.fillSpace(new Space(2,2, player2));
+        board.fillSpace(new Space(1,1, player2));
         Space move = new Space(0, 1);
         assertTrue(move.isSame(player1.getBestMove(board)));
     }
 
     @Test
     void getBestMoveWhenCornerAvailable() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(1, 1, player2.marker));
+        board.fillSpace(new Space(1, 1, player2));
         Space move = new Space(0, 0);
         assertTrue(move.isSame(player1.getBestMove(board)));
     }
 
     @Test
     void getBestMoveWhenCenterAvailable() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0,2, player2.marker));
-        board.fillSpace(new Space(2,2, player1.marker));
+        board.fillSpace(new Space(0,2, player2));
+        board.fillSpace(new Space(2,2, player1));
         Space move = new Space(1, 1);
         assertTrue(move.isSame(player1.getBestMove(board)));
     }
 
     @Test
     void getBestMoveWhenPlayerCanWin() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 0, player1.marker));
-        board.fillSpace(new Space(0,1, player1.marker));
+        board.fillSpace(new Space(0, 0, player1));
+        board.fillSpace(new Space(0,1, player1));
         Space winningSpace = new Space(0, 2);
         assertTrue(winningSpace.isSame(player1.getBestMove(board)));
     }
