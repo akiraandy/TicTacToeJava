@@ -4,22 +4,16 @@ public class Player {
     public Marker marker;
     private Rules rules;
     private Marker opponent;
-    public Player(Marker marker) {
-        this.marker = marker;
+    private static final int PLAYER_ONE = 1;
+    private static final int PLAYER_TWO = 2;
+    public Player(int playerNum) throws InvalidPlayerNumberException {
+        this.marker = getMarker(playerNum);
         this.opponent = getOpponentMarker();
         this.rules = new Rules();
     }
 
-    private Marker getOpponentMarker() {
-        if (marker == Marker.PLAYER1) {
-            return Marker.PLAYER2;
-        } else {
-            return Marker.PLAYER1;
-        }
-    }
-
     public Space takeTurn(int row, int col) {
-        return new Space(row, col, marker);
+        return new Space(row, col, this);
     }
 
     public Space getBestMove(Board board) {
