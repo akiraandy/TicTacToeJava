@@ -16,7 +16,7 @@ The ```Marker``` class represents the symbolic representation of a marker on a T
 ```EMPTY```
 The first two are assigned to ```Player``` objects. The 3rd is assigned to ```Space``` objects on default. For example, when a ```Board``` object is created, all ```Space``` objects will be created with a default ```EMPTY``` marker assigned to them.
 
-#### Space
+### Space
 The ```Space``` class represents a cell or spot in the game board.
 ```Space``` has three properties, an integer that represents the space's row, an integer that represents the space's column and a marker.
 
@@ -48,7 +48,7 @@ Returns ```true``` if space is filled with a player marker, else returns ```fals
 
 ```public boolean isSame(Space space)```
 Compares another ```Space``` object's col and row against its own col and row to determine whether they represent the same coordinate space. Returns ```true``` if col and row match that of foreign ```space```, else returns ```false```.
-#### Board
+### Board
 The ```Board``` class represents a board in a game of Tic Tac Toe.
 ```Board``` has three public properties:
 ```public Space[][] spaces```
@@ -86,7 +86,7 @@ Returns the center ```Space``` object of the board. If the total board size is n
 ```public List<Space> corners()```
 Returns a list of the board's corner ```Spaces```.
 
-#### Player
+### Player
 Player represents a player in a Tic Tac Toe game.
 The following is how to construct a player:
 
@@ -103,7 +103,7 @@ Accepts a row and column integer. Will return a ```Space``` object with the coor
 ```public Space getBestMove(Board board)```
 Accepts a ```Board``` object and returns the best move for the player given the current state of the board. If there are no available spaces on the ```Board``` the method will throw a ```SpaceDoesNotExistException```.
 
-#### Rules
+### Rules
 Rules represents the logic and knowledge of how and if the terminal conditions of the game are achieved.
 
 Construction:
