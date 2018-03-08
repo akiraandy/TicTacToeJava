@@ -8,19 +8,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class RulesTest {
     private Board board;
     private Rules rules;
-    private Marker player1Marker, player2Marker;
-    private Player[] players;
     private Player player1, player2;
+    private Player[] players;
 
     @BeforeEach
-    void setUp() throws InvalidBoardSizeException, InvalidMarkerException {
+    void setUp() throws InvalidBoardSizeException, InvalidPlayerNumberException {
         board = new Board(3);
         rules = new Rules();
-        player1Marker = Marker.PLAYER1;
-        player2Marker = Marker.PLAYER2;
-        player1 = new Player(player1Marker);
-        player2 = new Player(player2Marker);
-        players = new Player[] {player1, player2};
+        player1 = new Player(1);
+        player2 = new Player(2);
     }
 
     @Test
@@ -59,53 +55,52 @@ class RulesTest {
 
     @Test
     void getWinner() throws NoWinnerException, SpaceDoesNotExistException {
-        assertEquals(rules.getWinner(boardWithWinnerOnRows(), players), player1);
+        assertEquals(rules.getWinner(boardWithWinnerOnRows()), player1.marker);
     }
 
     @Test
     void throwsNoWinnerExceptionIfThereIsNoWinnerOnGetWinner() {
-        assertThrows(NoWinnerException.class, () -> rules.getWinner(tiedBoard(), players));
+        assertThrows(NoWinnerException.class, () -> rules.getWinner(tiedBoard()));
     }
 
     private Board tiedBoard() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 0, player1Marker));
-        board.fillSpace(new Space(0, 1, player2Marker));
-        board.fillSpace(new Space(0, 2, player1Marker));
-        board.fillSpace(new Space(1,  0, player1Marker));
-        board.fillSpace(new Space(1,  1, player1Marker));
-        board.fillSpace(new Space(1,  2, player2Marker));
-        board.fillSpace(new Space(2,  0, player2Marker));
-        board.fillSpace(new Space(2,  1, player1Marker));
-        board.fillSpace(new Space(2,  2, player2Marker));
+        board.fillSpace(new Space(0, 0, player1));
+        board.fillSpace(new Space(0, 1, player2));
+        board.fillSpace(new Space(0, 2, player1));
+        board.fillSpace(new Space(1,  0, player1));
+        board.fillSpace(new Space(1,  1, player1));
+        board.fillSpace(new Space(1,  2, player2));
+        board.fillSpace(new Space(2,  0, player2));
+        board.fillSpace(new Space(2,  1, player1));
+        board.fillSpace(new Space(2,  2, player2));
         return board;
     }
 
     private Board boardWithWinnerOnMajorDiagonal() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 0, player1Marker));
-        board.fillSpace(new Space(1, 1, player1Marker));
-        board.fillSpace(new Space(2, 2, player1Marker));
+        board.fillSpace(new Space(0, 0, player1));
+        board.fillSpace(new Space(1, 1, player1));
+        board.fillSpace(new Space(2, 2, player1));
         return board;
     }
 
     private Board boardWithWinnerOnMinorDiagonal() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 2, player1Marker));
-        board.fillSpace(new Space(1, 1, player1Marker));
-        board.fillSpace(new Space(2, 0, player1Marker));
+        board.fillSpace(new Space(0, 2, player1));
+        board.fillSpace(new Space(1, 1, player1));
+        board.fillSpace(new Space(2, 0, player1));
         return board;
     }
 
     private Board boardWithWinnerOnRows() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 0, player1Marker));
-        board.fillSpace(new Space(0, 1, player1Marker));
-        board.fillSpace(new Space(0, 2, player1Marker));
+        board.fillSpace(new Space(0, 0, player1));
+        board.fillSpace(new Space(0, 1, player1));
+        board.fillSpace(new Space(0, 2, player1));
         return board;
     }
 
     private Board boardWithWinnerOnColumns() throws SpaceDoesNotExistException {
-        board.fillSpace(new Space(0, 2, player1Marker));
-        board.fillSpace(new Space(1, 2, player1Marker));
-        board.fillSpace(new Space(2, 2, player1Marker));
+        board.fillSpace(new Space(0, 2, player1));
+        board.fillSpace(new Space(1, 2, player1));
+        board.fillSpace(new Space(2, 2, player1));
         return board;
     }
-
 }

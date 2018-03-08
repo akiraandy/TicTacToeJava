@@ -8,16 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class SpaceTest {
     private Space space;
     private Space spaceWithMarker;
-    private Marker marker;
+    private Player player1;
     private int row, col;
 
     @BeforeEach
-    void setUp() throws InvalidMarkerException {
+    void setUp() throws InvalidMarkerException, InvalidPlayerNumberException {
         row = 2;
         col = 2;
-        marker = Marker.PLAYER1;
+        player1 = new Player(1);
         space = new Space(row, col);
-        spaceWithMarker = new Space(row, col, marker);
+        spaceWithMarker = new Space(row, col, player1);
     }
 
     @Test
@@ -48,7 +48,7 @@ class SpaceTest {
 
     @Test
     void canBeFilled() {
-        space.fill(marker);
+        space.fill(player1.marker);
         assertTrue(space.isFilled());
         assertFalse(space.isEmpty());
     }
