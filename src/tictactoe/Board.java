@@ -34,6 +34,34 @@ public class Board {
         return spaces.size() == boardSize;
     }
 
+    public List<Space> availableSpaces() {
+        List<Space> availableSpaces = new ArrayList<>();
+        for(int row = 0; row < this.rowSize; row++) {
+            for (int col = 0; col < this.rowSize; col++) {
+                if (spaces[row][col].isEmpty()) {
+                    availableSpaces.add(spaces[row][col]);
+                }
+            }
+        }
+        return availableSpaces;
+    }
+
+    public Space center() {
+        if (boardSize % 2 == 0) {
+            return null;
+        }
+        int center = (int) Math.round(Math.log(rowSize));
+        return spaces[center][center];
+    }
+
+    public List<Space> corners() {
+        List<Space> corners = new ArrayList<>();
+        corners.add(spaces[0][0]);
+        corners.add(spaces[0][rowSize - 1]);
+        corners.add(spaces[rowSize - 1][0]);
+        corners.add(spaces[rowSize - 1][rowSize - 1]);
+        return corners;
+    }
     private Space getSpace(Space space) throws SpaceDoesNotExistException {
         List<Space> spaces = allSpaces();
         for (Space currentSpace : spaces) {
@@ -52,17 +80,6 @@ public class Board {
         }
     }
 
-    public List<Space> availableSpaces() {
-        List<Space> availableSpaces = new ArrayList<>();
-        for(int row = 0; row < this.rowSize; row++) {
-            for (int col = 0; col < this.rowSize; col++) {
-                if (spaces[row][col].isEmpty()) {
-                    availableSpaces.add(spaces[row][col]);
-                }
-            }
-        }
-        return availableSpaces;
-    }
 
     private boolean validSpace(Space space) {
         for (Space spaceInSpaces : availableSpaces()) {
@@ -92,24 +109,4 @@ public class Board {
         }
     }
 
-    public Space center() {
-        if (availableSpaces().size() % 2 != 0 && spaces[1][1].isEmpty()) {
-            return spaces[1][1];
-        }
-        return null;
-    }
-
-    public Space corners() {
-        List<Space> corners = new ArrayList<>();
-        corners.add(spaces[0][0]);
-        corners.add(spaces[0][rowSize - 1]);
-        corners.add(spaces[rowSize - 1][0]);
-        corners.add(spaces[rowSize - 1][rowSize - 1]);
-        for(Space space : availableSpaces()) {
-            if (corners.contains(space)) {
-                return space;
-            }
-        }
-        return null;
-    }
 }

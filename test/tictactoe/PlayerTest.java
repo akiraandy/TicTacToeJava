@@ -58,7 +58,8 @@ class PlayerTest {
         board.fillSpace(new Space(0,2, player2));
         board.fillSpace(new Space(2,2, player1));
         Space move = new Space(1, 1);
-        assertTrue(move.isSame(player1.getBestMove(board)));
+        Space center = player1.getBestMove(board);
+        assertTrue(move.isSame(center));
     }
 
     @Test
