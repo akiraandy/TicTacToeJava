@@ -27,7 +27,7 @@ public class Rules {
         return board.isFull() && !winner(board);
     }
 
-    public boolean over(Board board, Player[] players) {
+    public boolean over(Board board) {
         return tied(board) || winner(board);
     }
 

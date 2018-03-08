@@ -52,7 +52,7 @@ public class Board {
         }
     }
 
-    private List<Space> availableSpaces() {
+    public List<Space> availableSpaces() {
         List<Space> availableSpaces = new ArrayList<>();
         for(int row = 0; row < this.rowSize; row++) {
             for (int col = 0; col < this.rowSize; col++) {
@@ -90,5 +90,26 @@ public class Board {
                 this.spaces[rowIndex][colIndex] = new Space(rowIndex, colIndex);
             }
         }
+    }
+
+    public Space center() {
+        if (availableSpaces().size() % 2 != 0 && spaces[1][1].isEmpty()) {
+            return spaces[1][1];
+        }
+        return null;
+    }
+
+    public Space corners() {
+        List<Space> corners = new ArrayList<>();
+        corners.add(spaces[0][0]);
+        corners.add(spaces[0][rowSize - 1]);
+        corners.add(spaces[rowSize - 1][0]);
+        corners.add(spaces[rowSize - 1][rowSize - 1]);
+        for(Space space : availableSpaces()) {
+            if (corners.contains(space)) {
+                return space;
+            }
+        }
+        return null;
     }
 }
