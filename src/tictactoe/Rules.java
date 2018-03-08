@@ -12,15 +12,15 @@ public class Rules {
         return false;
     }
 
-    public Player getWinner(Board board, Player[] players) throws NoWinnerException {
+    public Marker getWinner(Board board) throws NoWinnerException {
         for (ArrayList<Space> line : winningCombinations(board)) {
-            if (line.stream().allMatch(space -> space.marker == players[0].marker)){
-                return players[0];
-            } else if (line.stream().allMatch(space -> space.marker == players[1].marker)) {
-                return players[1];
+            if (line.stream().allMatch(space -> space.marker == Marker.PLAYER1)){
+                return Marker.PLAYER1;
+            } else if (line.stream().allMatch(space -> space.marker == Marker.PLAYER2)) {
+                return Marker.PLAYER2;
             }
         }
-        throw new NoWinnerException("The current game does not have a winner");
+        throw new NoWinnerException("The current board does not have a winner");
     }
 
     public boolean tied(Board board) {
