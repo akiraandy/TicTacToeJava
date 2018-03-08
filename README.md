@@ -3,7 +3,7 @@
 
 ### Setup
 
-Download or clone repo. Import the ```tictactoe.jar``` file in ```./out/artifacts/tictactoe.jar```. Import classes as needed.
+Download or clone repo. Build project using ```/src``` as your source folder. Import the ```tictactoe.jar``` and import classes as needed.
 
 ### Library structure:
 There are 5 main classes that are used to play a game of Tic Tac Toe
