@@ -63,4 +63,22 @@ public class Player {
         }
         return null;
     }
+
+    private Marker getMarker(int playerNum) throws InvalidPlayerNumberException {
+        if (playerNum == PLAYER_ONE) {
+            return Marker.PLAYER1;
+        } else if (playerNum == PLAYER_TWO) {
+            return Marker.PLAYER2;
+        } else {
+            throw new InvalidPlayerNumberException("Player number must be either 1 or 2");
+        }
+    }
+
+    private Marker getOpponentMarker() {
+        if (marker == Marker.PLAYER1) {
+            return Marker.PLAYER2;
+        } else {
+            return Marker.PLAYER1;
+        }
+    }
 }
