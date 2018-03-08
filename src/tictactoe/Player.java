@@ -18,7 +18,7 @@ public class Player {
         return new Space(row, col, this);
     }
 
-    public Space getBestMove(Board board) {
+    public Space getBestMove(Board board) throws SpaceDoesNotExistException {
         if (winningMove(board) != null) {
             return winningMove(board);
         } else if (blockingMove(board) != null) {
@@ -30,7 +30,7 @@ public class Player {
         } else if (anyAvailableSpace(board) != null) {
             return anyAvailableSpace(board);
         }
-        return new Space(-1, -1);
+        throw new SpaceDoesNotExistException("There are no available spaces on the board");
     }
 
     private Space chooseCorner(List<Space> corners){
