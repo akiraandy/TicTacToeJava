@@ -26,9 +26,11 @@ The ```Space``` class represents a cell or spot in the game board.
 ```Space``` has two construction methods:
 
 ```Space space = new Space(int row, int col);```
+
 This creates a space with a row and column position with an empty marker as default.
 
 ```Space space = new Space(int row, int col, Player player)```
+
 This creates a space with a row and column position and takes a Player object and assigns the player's marker to ```space```'s marker.
 
 Space has 5 public methods:
@@ -53,6 +55,7 @@ The ```Board``` class represents a board in a game of Tic Tac Toe.
 ```spaces``` is a 2D array of ```Space``` objects.
 
 ```public int boardSize, rowSize```
+
 ```boardSize``` represents the total number of spaces on the board (i.e. 9 on a traditional Tic Tac Toe board).
 ```rowSize``` represents the number of spaces in a row on the board (i.e. 3 on a traditional Tic Tac Toe board).
 
@@ -86,7 +89,9 @@ Returns a list of the board's corner ```Spaces```.
 #### Player
 Player represents a player in a Tic Tac Toe game.
 The following is how to construct a player:
+
 ```Player player1 = new Player(int playerNum)```
+
 ```playerNum``` can be either ```1``` or ```2```. If any other number or symbol is used a ```InvalidPlayerNumberException``` will be thrown.
 ```1``` will set the player's marker to ```PLAYER1``` marker enum. ```2``` will set the player's marker to ```PLAYER2``` marker enum.
 
