@@ -4,10 +4,10 @@ public class Space {
     public int row, col;
     public Marker marker;
 
-    public Space(int row, int col, Marker marker) {
+    public Space(int row, int col, Player player) {
         this.row = row;
         this.col = col;
-        this.marker = marker;
+        this.marker = player.marker;
     }
 
     public Space(int row, int col) {
