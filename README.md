@@ -50,17 +50,23 @@ Returns ```true``` if space is filled with a player marker, else returns ```fals
 Compares another ```Space``` object's col and row against its own col and row to determine whether they represent the same coordinate space. Returns ```true``` if col and row match that of foreign ```space```, else returns ```false```.
 ### Board
 The ```Board``` class represents a board in a game of Tic Tac Toe.
+
 ```Board``` has three public properties:
+
 ```public Space[][] spaces```
+
 ```spaces``` is a 2D array of ```Space``` objects.
 
 ```public int boardSize, rowSize```
 
 ```boardSize``` represents the total number of spaces on the board (i.e. 9 on a traditional Tic Tac Toe board).
+
 ```rowSize``` represents the number of spaces in a row on the board (i.e. 3 on a traditional Tic Tac Toe board).
 
 The following is ```Board```'s constructor:
+
 ```Board board = new Board(int boardSize)```
+
 ```Board``` can be instantiated with any size greater than 2. If any value less than 3 is used an ```InvalidBoardSizeException``` will be thrown.
 
 ```Board``` has 7 public methods:
@@ -69,6 +75,7 @@ The following is ```Board```'s constructor:
 Accepts a ```Space``` fills the board with that space's marker if it is a valid space on the board (i.e. there isn't already a player marker in that spot on the board). If ```Space```'s coordinates are not within the scope of the board, it will throw a ```SpaceDoesNotExistException```.
 
 ```public void resetSpace(Space space)```
+
 Accepts a ```Space``` object that sets the corresponding ```Space```'s marker on the board to an empty marker. If ```Space```'s coordinates are not within the scope of the board, it will throw a ```SpaceDoesNotExistException```.
 
 ```public boolean isFull()```
